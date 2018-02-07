@@ -1,0 +1,17 @@
+.strings{
+  display: flex;
+  flex-direction:column-reverse;
+  list-style-type: none;
+}
+
+.fret {
+  background-color: #99b;
+  height: 4em;
+  width: 4em;
+  border: 2px solid black;
+}
+
+.frets {
+  display: flex;
+  list-style-type: none;
+}
