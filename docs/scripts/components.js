@@ -46,8 +46,15 @@ Vue.component('string', {
 Vue.component('fret', {
   props:['fretVal', 'stringVal'],
   template:`
-  <li class='fret'>
+  <li class='fret {{noteVal}}'>
     S-{{stringVal}}-{{fretVal}}
+    <br>
+    {{noteVal}}
   </li>
-  `
+  `,
+  computed: {
+    noteVal:function(){
+      return this.fretVal+this.stringVal*5-(Math.floor(this.stringVal/4))
+    }
+  }
 })
