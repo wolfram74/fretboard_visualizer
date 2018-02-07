@@ -14,15 +14,15 @@ Vue.component('fretboard', {
   `,
   data: function(){
     var stringCount = 6;
-    var fretCount = 18
-    var boardArray = []
+    var fretCount = 18;
+    var boardArray = [];
     for(var string=0; string<stringCount; string++){
-      var stringArray = []
+      var stringArray = [];
       for(var fret=0; fret<fretCount; fret++){
-        stringArray.push(fret)
-      }
-      boardArray.push(stringArray)
-    }
+        stringArray.push(fret);
+      };
+      boardArray.push(stringArray);
+    };
     return {boardArray}
   }
 })
